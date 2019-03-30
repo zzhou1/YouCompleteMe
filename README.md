@@ -276,6 +276,11 @@ will notify you to recompile it. You should then rerun the install process.
 
 Install development tools, CMake, and Python headers:
 
+
+- openSUSE Tumbleweed:
+
+      sudo zypper install cmake gcc-c++ python3-devel
+
 - Fedora 27 and later:
 
       sudo dnf install cmake gcc-c++ make python3-devel
@@ -292,7 +297,7 @@ Compiling YCM **with** semantic support for C-family languages through
 **libclang**:
 
     cd ~/.vim/bundle/YouCompleteMe
-    ./install.py --clang-completer
+    python3 install.py --clang-completer
 
 Compiling YCM **with** semantic support for C-family languages through
 **experimental clangd**:
